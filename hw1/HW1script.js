@@ -2,7 +2,7 @@
 
 let tempC = 28;
 let tempF = (9/5)*tempC + 32;
-console.log(tempF);
+console.log(tempC, tempF);
 
 // Task 2
 
