@@ -229,3 +229,96 @@
 //(Доброе утро\день\вечер\ночи Иван)
 
 // function hello(name)
+
+//SEMINAR 4
+
+// Task 1
+
+// const arr = [];
+// let size = Number(prompt(`введите размер массива`));
+// for (let i = 0; i < size; i++) {
+//     arr.push(Math.round(Math.random()*100));
+// }
+// console.log(arr);
+// console.log(arr.length);
+
+// const arr = ["a","b","c"];
+// for (let index = 0; index < arr.length; index++) {
+//     arr[i] = i + 1;
+// }
+// console.log(arr);
+
+//Task 2
+
+//Создайте массив с элементами 1, 2 и 3. С помощью оператора ++ увеличьте каждый элемент массива на единицу.
+
+// const arr = [1,2,3];
+// for (let index = 0; index < arr.length; index++) {
+//     arr[index]++;
+// }
+// console.log(arr);
+
+//Узнайте длину следующего массива:
+
+// const arr = [];
+// arr[3] = 'a';
+// arr[8] = 'b';
+// console.log(arr.length);
+
+//Пусть дан такой массив:
+// const arr = [1, 2, 3];
+// //Добавьте ему в конец элементы 4 и 5.
+// arr.push(4,5);
+// console.log(arr);
+
+//Создайте произвольный массив из 5 элементов, Удалите из него два элемента. 
+//Проверьте, какое станет значение свойства length после этого.
+
+// const arr = [];
+// let size = 5;
+// for (let i = 0; i < size; i++) {
+//     arr.push(Math.round(Math.random()*100));
+// }
+// console.log(arr);
+// arr.pop();
+// arr.pop();
+// console.log(arr.length);
+
+//либо
+
+// arr.splice(3,4);
+// console.log(arr);
+
+//Task 3
+// С помощью цикла for выведите в консоль числа от 11 до 33.
+// С помощью цикла for выведите в консоль нечетные числа в промежутке от 1 до 99.
+// С помощью цикла for выведите в консоль числа от 100 до 0.
+// Дано число num с неким начальным значением. Умножайте его на 3 столько раз, 
+// пока результат умножения не станет больше 1000. Какое число получится? 
+// Посчитайте количество итераций, необходимых для этого.
+
+
+// for (let item = 11; item <=33; item++) {
+//     console.log(item);
+// }
+
+// for (let item = 1; item <=99; item = item + 2){ //item += 2
+//     console.log(item);
+// }
+
+// for (let item = 100; item >= 0; item--){
+//     console.log(item);
+// }
+
+// let num = (Math.round(Math.random()*10));
+// let count = 0;
+// console.log(num);
+// while(num <= 1000){
+//     num = num * 3;
+//     count++;
+// }
+// console.log(num, count);
+
+// Task 4
+
+

@@ -39,14 +39,14 @@
 
 // Task 6
 
-let firstname = "Юля";
-let lastName = "Полякова";
-console.log(`${firstname} ${lastName}`);
+// let firstname = "Юля";
+// let lastName = "Полякова";
+// console.log(`${firstname} ${lastName}`);
 
-let x = "java";
-let y = "script";
-console.log(x+y);
+// let x = "java";
+// let y = "script";
+// console.log(x+y);
 
-let z = "hello";
-let i = "world";
-console.log(z, i);
+// let z = "hello";
+// let i = "world";
+// console.log(z, i);
