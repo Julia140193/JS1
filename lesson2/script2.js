@@ -322,3 +322,66 @@
 // Task 4
 
 
+// SEMINAR 6
+
+// Task 1
+
+// const link = document.querySelector('#block');
+// console.log(link);
+
+// const link = document.querySelectorAll('p');
+// console.log(link[0].textContent);
+
+// const link = document.querySelector('.www');
+// console.log(link.textContent);
+
+// Task 2
+
+// const link = document.querySelector('.link');
+// link.textContent = 'link text js';
+// link.href = 'https://developer.mozilla.org/ru/';
+
+// console.log(link);
+
+// const img = document.querySelector('.photo');
+// img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Zunge_raus.JPG/800px-Zunge_raus.JPG';
+
+// Task 3
+
+// const content = document.querySelector('.content');
+// const newContent = document.createElement('p');
+// newContent.textContent = 'новый текстовый элемент';
+// content.appendChild(newContent);
+// content.removeChild(newContent);
+
+// Task 4
+
+// Создать элемент button, добавить в блок <div class="content"></div>
+// При клике на который в консоль выводится сколько 
+// раз пользователь нажал на данную кнопку
+
+// const button1 = document.createElement('button');
+// const button2 = document.createElement('button');
+// const counterText = document.createElement('p');
+
+// button1.textContent = 'нажми меня';
+// button2.textContent = 'обнулить счетчик';
+
+// const content = document.querySelector('.content');
+
+// content.appendChild(counterText);
+// content.appendChild(button1);
+// content.appendChild(button2);
+
+// let counter = 0;
+// counterText.textContent = (`Совершено ${counter} нажатий`);
+
+// button1.onclick = function() {
+//     counter++;
+//     counterText.textContent = (`Совершено ${counter} нажатий`);
+// }
+
+// button2.onclick = function() {
+//     counter = 0;
+//     counterText.textContent = (`Совершено ${counter} нажатий`);
+// }
