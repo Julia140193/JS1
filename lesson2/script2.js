@@ -385,3 +385,203 @@
 //     counter = 0;
 //     counterText.textContent = (`Совершено ${counter} нажатий`);
 // }
+
+// СЕМ 7
+
+//Task 1
+// Дан блок, внутри него необходимо создать элемент div с классом item, 
+// разместить текст “Элемент внутри” и задать стили
+// Цвет текста синий
+// Рамка сплошная черная
+// Цвет фона #f8f8f8
+// Внутренний отступ 16px
+// Добавить данному блоку класс item_1 (использовать setAttribute)
+
+// const block = document.querySelector('.block');
+// const item = document.createElement('div');
+// item.className = 'item';
+// item.textContent = 'Элемент внутри';
+// item.style.color = 'blue';
+// item.style.border = '1px solid black';
+// item.style.backgroundColor = '#f8f8f8';
+// item.style.padding = '16px';
+// block.setAttribute('class', 'item_1');
+// block.appendChild(item);
+
+// Task 2
+
+// Необходимо с помощью querySelector найти параграф с классом text
+// Вывести в консоль соседний элемент h2
+// Вывести в консоль родительский элемент content
+// Вывести в консоль картинку
+// Вывести в консоль родительский элемент elem
+
+// const text = document.querySelector('.text');
+// console.log(text.previousElementSibling);
+// console.log(text.parentElement);
+// console.log(text.parentElement.previousElementSibling[0]);
+// console.log(text.parentElement.parentElement);
+
+// Task 3
+// С помощью querySelector найти элемент h2  и вывести в консоль 
+//всех его родителей
+
+// const h2 = document.querySelector('.subtitle');
+// let parent = h2.parentElement;
+// while(parent.className){
+//     console.log(parent.className);
+//     parent = parent.parentElement;
+// }
+
+// Task 4
+
+// Дано поле ввода и кнопка отправить, необходим реализовать функционал,
+// если пользователь нажимает на кнопку отправить, 
+//а поле ввода пустое, то под полем ввода и кнопкой должен 
+//появиться заголовок h2 с текстом вы не заполнили поле ввода
+//Цвет у рамки сделать красным
+
+// const form = document.querySelector('form');
+// const input = form.children[0];
+// const button = form.children[1];
+
+// const textError = document.createElement('h2');
+// textError.textContent = '';
+// form.appendChild(textError);
+// button.onclick = function () {
+//     if(input.value.length == 0) {
+//         textError.textContent = 'Вы не заполнили после ввода';
+//     } else {
+//         textError.textContent = '';
+//     }
+// }
+
+// Task 5
+
+// Создайте с помощью javascript новый элемент button
+// Добавьте текст для кнопки “Отправить”
+// При клике на данную кнопку необходимо чтобы текст поменялся 
+// на “Текст отправлен”
+
+// SEM 8
+
+// task 1
+
+// В html создать кнопку button
+// После загрузки страницы вывести в консоль текст “страница загрузилась”
+// Добавить событие onclick которое выводит в консоль текст “событие onclick”
+// Добавить событие addEventListener которое выводит в консоль текст “событие addEventListener”
+
+// window.addEventListener('load', function (e){
+//     console.log('страница загрузилась');
+// })
+
+// // const button = document.querySelector('.button');
+// // button.onclick = function () {
+// //     console.log('событие onclick');
+// // }
+
+// // document.addEventListener('click', function (e){
+// //     console.log('событие addEventListener');
+// // })
+
+// // task 2
+
+// // Создать в html три кнопки button с нумерацией (1, 2, 3 соответственно)
+// // Добавить клик на кнопку , чтобы в консоль выводилась именно та кнопка на которую мы нажали
+
+// document.addEventListener('click', function (e){
+//          console.log(e.target.className);
+// });
+// // Добавить кнопку button с текстом 4, которая считает сколько раз на 
+// // нее нажали и количество нажатий на эту кнопку выводит в консоль
+
+// const button4 = document.querySelector('.button4');
+// let counter = 0;
+// button4.onclick = function () {
+//     counter++;
+//     console.log(`количество нажатий ${counter}`);
+// }
+
+// // Создать кнопку button с текстом 5, При клике на которую, меняется 
+// // текст данной кнопки на “Вы нажали на эту кнопку”
+
+// const button5 = document.querySelector('.button5');
+// button5.onclick = function () {
+//     button5.textContent = 'Вы нажали на эту кнопку';
+// }
+
+// // Task 3
+
+// // Создать кнопку, которая добавляет заголовок h1 с текстом, 
+// // “Новый заголовок", данный элемент нужно расположить после кнопки
+
+// const button = document.querySelector('.button');
+// const text = document.createElement('h1');
+// button.parentElement.appendChild(text);
+
+// button.onclick = function () {
+//    text.textContent = 'Новый заголовок';
+// }
+
+// // Создать вторую кнопку, которая будет удалять созданный заголовок h1
+
+// const button1 = document.querySelector('.button1');
+// button1.onclick = function () {
+//     button.parentElement.removeChild(text);
+// }
+// // Создать третью кнопку, при наведении на которую в консоль будет 
+// // выводиться текст “вы навели на данную кнопку” , как только вы убираем курсор мыши с кнопки,
+// //  в консоли должен появиться текст “Наведения на кнопку больше нет”
+
+// const button2 = document.querySelector('.button2');
+// button2.addEventListener('mouseover', function () {
+//     console.log('вы навели на данную кнопку');
+// })
+// button2.addEventListener('mouseout', function (){
+//     console.log('Наведения на кнопку больше нет');
+// })
+
+// Task 4
+
+// Создать в html список состоящий из 3-х произвольных элементов li
+// Нужно создать кнопку которая будет добавлять элементы списка с текстом “новый элемент списка”
+
+// const button = document.querySelector('.button');
+// const list = document.querySelector('ul');
+// button.onclick = function () {
+//     list.appendChild(document.createElement('li'));
+//     list.children[list.children.length - 1].textContent = 'новый элемент списка';
+// }
+
+// // Создать кнопку, которая будет удалять первый элемент из созданного списка
+
+// const button1 = document.querySelector('.button1');
+// button1.onclick = function () {
+//     list.removeChild(list.children[0]);
+// }
+
+// // Создать кнопку, при клике на которую ей добавляется класс “click”
+
+// const button2 = document.querySelector('.button2');
+// button2.onclick = function () {
+// //     button2.className = 'click';
+// }
+
+// Task 5
+
+// Дан тег <div class="content"></div> 
+// Создайте с помощью javascript новый элемент button
+
+// const button = document.createElement('button');
+// button.textContent = 'Отправить';
+// const div = document.querySelector('.content');
+// div.appendChild(button);
+
+// button.onclick = function () {
+//     button.textContent = 'Текст отправлен';
+// }
+
+// Добавьте текст для кнопки “Отправить”
+// При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”
+
